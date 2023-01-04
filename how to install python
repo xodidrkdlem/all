@@ -1,0 +1,37 @@
+how to install 'python' & how to install 'vscode'
+
+<if you are window user>
+-how to install python?
+1.https://www.python.org/
+(위에 주소를 들어간다.)
+2.Select the version you want.
+(원하는 버전을 선택한다.)
+3.if you want simple -> click 'install now'
+(간단한걸 원한다면, 'install now'를 클릭한다.)
+4.If you want to know what to install -> click 'Customize installation'
+(어떤게 설치되는지 알고싶다면, 'Customize installation'를 누른다.
+
+phase1(1단계)- Option Features
+
+->Documentation(install the python documentation file)
+(문서가 함께 설치)
+->pip(install pip, which can download and install other python packages.)
+(파이썬 패키지를 다운로드 할수있게 만들어주는 프로그램, 설치 필수)
+->tcl/tk(installs tkinter and the IDLE development environment)
+(tkinter 설치 및 IDLE 이라는 개발 편집기 설치, tkinter는 GUI개발에 필요)
+->Python test suite(installs the standard library test suite.)
+(테스트를 위한 기본적인 라이브러리를 설치)
+->py launcher(installs the global 'py' launcher to make it easier to start python)
+(.py 파일 선택시 쉽게 파이썬이 실행됨.)
+
+phase2(2단계)- Advanced Options
+※I omitted the parts I didn't think were necessary.(필요없다고 생각한 부분은 생략)
+->Add Python to environment variables
+(파이썬 환경 변수를 추가할 것인가, yes 추천)
+
+5.Installation successful!!(설치 성공!)
+
+6.If you want to check the Python version
+(파이썬 버전을 체크하고싶다면)
+window key + x -> click 'windows Powershell'  -> Enter python -V(upper case)
+윈도우 키 + x -> windows Powershell 클릭 -> python -V(대문자) 입력
