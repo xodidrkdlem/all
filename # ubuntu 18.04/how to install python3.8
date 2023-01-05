@@ -1,0 +1,59 @@
+# ubuntu 18.04 // how to install python3.8
+
+When you install Ubuntu 18.04, the 2.7 version and the 3.6 version are installed by default.
+(우분투 18.04를 설치를 하면 기본적으로 2.7버전과 3.6 버전이 설치되어있다.)
+
+if you want python3.8
+
+1.python3 -V(upper case)
+-> python 3.6.7
+
+2.python3.8 -V
+-> python 3.8.0
+
+3.update-alternatives --config python
+->update-alternatives: 오류: no alternatives for python
+
+4.sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
+->update-alternatives: using /usr/bin/python3.8 to provide /usr/bin/python (python) in auto mode
+
+---------<check>----------
+
+5.python3 -V
+->Python 3.8.0
+※If the version is output as 3.6
+(만약에 버전이 3.6으로 나온다면)
+
+6.python -V
+->python 3.8.0
+
+7.sudo update-alternatives --config python
+->password:
+--> update-alternatives: erorr: no alternatives for python
+
+8.sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+ ->update->alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
+  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.6 2
+  ->alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
+  sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 3
+  ->alternatives: using /usr/bin/python2.7 to provide /usr/bin/python (python) in auto mode
+
+※The numbers 1,2,3 indicate priority.
+(1,2,3 숫자가 나타내는 것은 우선순위이다.)
+※The number 3 is the first priority.
+(숫자 3이 우선순위 첫번째이다.)
+
+9.update-alternatives --config python
+
+Commands that show priority
+(우선순위를 보여주는 명령어)
+
+10. *Appearance is currently priority number one. 
+*모양이 있는게 우선순위 첫번째
+
+11.done (끝)
+
+
+
+
+
